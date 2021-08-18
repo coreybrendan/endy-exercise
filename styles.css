@@ -45,7 +45,7 @@ img {
 .top-bar {
   background-color: #243746;
   color: #fff;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   text-align: center;
   height: 55px;
   display: flex;
@@ -58,7 +58,7 @@ img {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   position: absolute;
   right: 20px;
   cursor: pointer;
@@ -72,7 +72,7 @@ img {
 }
 
 .nav-flex a {
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #243746;
@@ -119,7 +119,7 @@ img.logo {
 }
 
 .wrapper {
-  width: 900px;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -158,7 +158,7 @@ img.logo {
   color: #fff;
   background-color: #C40058;
   padding: 13px 23px;
-  width: 26%;
+  width: 250px;
   border: 2px solid #C40058;
   border-radius: 3px;
 }
@@ -170,11 +170,15 @@ img.logo {
   border: 2px solid #C40058;
 }
 
-.offer-graphic {
+.offer-graphic-right {
   width: 125px;
-  position: absolute;
-  right: 152px;
-  bottom: 117px;
+  position: relative;
+  left: 236px;
+  top: 141px;
+}
+
+.offer-graphic-left {
+  display: none;
 }
 
 .content-container p {
@@ -185,7 +189,7 @@ img.logo {
   bottom: 10px;
 }
 
-.content-container a {
+.terms-conditions {
   color: #fff;
   text-decoration: none;
   border-bottom: 1px solid #fff;
@@ -288,3 +292,144 @@ img.logo {
 }
 
 /* responsive design */
+@media (max-width: 1200px) {
+  .cart {
+    right: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .top-bar a {
+    display: none;
+  }
+
+  .top-bar p {
+    width: 95%;
+    font-size: 0.7rem;
+  }
+
+  .nav-left {
+    display: none;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .nav-flex {
+    width: 80%;
+  }
+
+  .fa-bars {
+    visibility: visible;
+    cursor: pointer;
+    position: initial;
+    font-size: 1rem;
+  }
+
+  .cart {
+    font-size: 1.1rem;
+    position: initial;
+  }
+
+  .hero-container {
+    background-image: url(./Assets/endy-dreamiest-offer-ever-sale-hero-1024x645-2x.jpg);
+  }
+
+  .offer-graphic-right {
+  left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    background-image: url(./Assets/endy-dreamiest-offer-ever-sale-hero-768x600-2x.jpg);
+    height: calc(75vh - (55px + 60px));
+  }
+
+  .content-container h1 {
+    font-size: 2rem;
+    margin-top: 10px; 
+  }
+
+  .content-container h2 {
+    font-size: 0.95rem;
+  }
+
+  .anchor-link {
+    width: 91%;
+    font-size: 0.65rem
+  }
+
+  .nav-flex {
+    width: 77%;
+  }
+
+  .offer-graphic-right {
+    display: none;
+  }
+
+  .offer-graphic-left {
+    display: block;
+    width: 100px;
+    position: relative;
+    right: 147px;
+    top: 215px;
+  }
+
+  .content-container p {
+    font-size: 0.55rem;
+    bottom: 14px;
+  }
+}
+
+@media (max-width: 637px) {
+  .offer-graphic-left {
+    top: 193px;
+  }
+}
+
+@media (max-width: 598px) {
+  .offer-graphic-left {
+    top: 147px;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-bar p {
+    font-size: 0.65rem;
+  }
+  
+  .hero-container {
+    background-image: url(./Assets/endy-dreamiest-offer-ever-sale-hero-500X600-2x.jpg);
+    height: calc(85vh - (55px + 60px));
+  }
+
+  .offer-graphic-left {
+    top: 130px;
+    right: 75px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-container {
+    background-image: url(./Assets/endy-dreamiest-offer-ever-sale-hero-375x600-2x.jpg);
+    height: calc(100vh - (55px + 60px));
+  }
+
+  .offer-graphic-left {
+    top: 65px;
+    right: 100px;
+    width: 103px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-container {
+    height: calc(125vh - (55px + 60px));
+  }
+}

@@ -18,7 +18,7 @@ setTimeout(() => {
   document.addEventListener('mouseout', mouseExit);
   document.addEventListener('keydown', closePop);
 
-}, 5000);
+}, 3000);
 
 // escape exit pop-up on icon/mask click event or esc key
 const closePop = (event) => {
