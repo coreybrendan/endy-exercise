@@ -35,6 +35,37 @@ img {
 
 /* end general styles */
 
+/* stretch goal: sliding menu styles */
+.sliding-menu {
+  position: fixed;
+  left: -500px;
+  top: 114px;
+  transition: all 0.3s ease-out;
+  width: 46.5vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.98);
+  z-index: -10;
+}
+
+.sliding-menu a {
+  font-size: 1.1rem;
+  border-bottom: 1px solid whitesmoke;
+  display: inline-block;
+  padding: 15px 25px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+#toggle:checked ~ .sliding-menu {
+  left: 0;
+  width: 100vw;
+  z-index: 10;
+}
+
+#toggle {
+  display: none;
+}
+
 /* navigation styles */
 .fa-bars {
   position: absolute;
