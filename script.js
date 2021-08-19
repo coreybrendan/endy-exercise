@@ -1,5 +1,6 @@
 // reveal exit pop-up on mouse event
 const mouseExit = (event) => {
+  // mouse conditions
   const intentToLeave = 
     !event.toElement 
     && !event.relatedTarget 
@@ -11,16 +12,15 @@ const mouseExit = (event) => {
     const modalElement = document.getElementById('popup');
     modalElement.classList.remove('visually-hidden');
   }
-
 };
 
+// time delay to fire
 setTimeout(() => {
   document.addEventListener('mouseout', mouseExit);
   document.addEventListener('keydown', closePop);
-
 }, 3000);
 
-// escape exit pop-up on icon/mask click event or esc key
+// escape on icon click, mask click or esc keypress
 const closePop = (event) => {
   const shouldClose =
   event.target.id === 'popup' ||
